@@ -11,9 +11,18 @@
     </a>
   </h3>
 
-  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <p *ngIf="product.description">Description: {{ product.description }}  <br> <b>Rating: <span>{{product.rating}}</span></b></p>
 
-  <button type="button" (click)="share()">Share</button>
+
+  <button type="button" (click)="share()" style="padding: 0">
+    <a
+      href="https://telegram.me/share/url?url={{ product.link }}"
+      target="_blank"
+      style="color:white;
+      padding: 8px 16px"
+    >Share
+    </a>
+  </button>
 
   <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
