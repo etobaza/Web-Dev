@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 234, 234);
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15%;
+    background-color: #efefef;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    height: 3rem;
+}
+
+header h1 {
+    background: -webkit-linear-gradient(#f067d7, #2d50ff);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    margin: 2rem auto;
+}
+
+#todo-create {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 100%;
+}
+
+#item-input {
+    padding: 0.6rem;
+    border: 2px solid #f3b9ff;
+    border-radius: 0.5rem;
+    width: 24.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#item-input:focus {
+    border: 2px solid #ff69b4;
+    box-shadow: 0 0 10px #ff69b4;
+    outline: none;
+}
+
+#item-input:hover {
+    transform: scale(1.05);
+}
+
+.addBtn {
+    padding: 1rem 1.5rem;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0.5rem;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+#todo-container {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    margin-left: 0.125rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item-text {
+    display: inline-block;
+    margin-right: 10rem;
+    padding-left: 1rem;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #ff69b4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #f067d7;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+}

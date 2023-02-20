@@ -1,0 +1,234 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+
+#phone-pic {
+    width: 23.75rem;
+}
+
+#google-icon {
+    width: 8.4rem;
+    height: 2.5rem;
+}
+
+#microsoft-icon {
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+#fb-logo {
+    width: 1rem;
+}
+
+#inst-logo {
+    width: 11rem;
+    margin-left: 2.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid rgb(222, 222, 222);
+    width: 19em;
+    height: 21em;
+    margin-left: 42.9em;
+    margin-top: -33em;
+    align-items: center;
+}
+
+#inst-logo {
+    margin-left: 4em;
+    margin-top: 1.5em;
+}
+
+#form-alt-choice {
+    display: flex;
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #999;
+}
+
+#form-alt-choice span {
+    margin-left: 1.7em;
+    margin-right: 1.5em;
+}
+
+.form-container form {
+    margin-left: 1.8em;
+    margin-bottom: 0em;
+}
+
+#login,
+#pass {
+    width: 14rem;
+    height: 0.8rem;
+    border-color: rgb(231, 231, 231);
+    border-radius: 0.15rem;
+    border: 1px solid #dddfe2;
+    background-color: #FAFAFA;
+    font-size: 0.7rem;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+#login:focus, #pass:focus{
+    outline: 0.5px solid #7a7a7a;
+}
+
+#log-button {
+    width: 15.5rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #7AB4F4;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 0.55rem;
+}
+
+#phone-pic {
+    margin-left: 18em;
+}
+
+#logfb {
+    margin-left: 6em;
+    margin-bottom: em;
+    font-size: 0.8em;
+}
+
+#logfb a {
+    text-decoration: none;
+    color: #385185;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 1em;
+}
+
+#forgot {
+    margin-left: 12em;
+    margin-bottom: 1em;
+    font-size: 0.6rem;
+}
+
+#forgot a {
+    text-decoration: none;
+    color: #00376b;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid rgb(222, 222, 222);
+    width: 19em;
+    height: 4em;
+    margin-left: 42.9em;
+    margin-top: 0.5em;
+    align-items: center;
+}
+
+.sign-up-container span {
+    margin-left: 4.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.sign-up-container span a {
+    text-decoration: none;
+}
+
+.sign-up-container span a {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.app-container p {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #545454;
+}
+
+.app-container img {
+    margin-top: 0.5rem;
+}
+
+#google-icon {
+    margin-left: -6.5rem;
+}
+
+#microsoft-icon {
+    margin-left: 1em;
+}
+
+.app-container {
+    margin-left: 50rem;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6em;
+    margin-left: 15rem;
+    font-size: 0.7rem;
+    width: 80%;
+    color: #8e8e8e;
+}
+
+footer li {
+    margin-left: 1em;
+}
+
+footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+footer span {
+    margin-left: 30em;
+    line-height: 4;
+
+}
+
+.footer-settings {
+    margin-left: 25em;
+    line-height: 5;
+    margin-bottom: 3em;
+}
+
+.footer-settings span {
+    margin-left: 0em;
+    line-height: 2;
+}
+
+.footer-settings select {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8e8e8e;
+    font-size: 0.7rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+}

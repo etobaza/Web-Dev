@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    max-width: 1920px;
+    font-family: "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+    font-size: 0.8rem;
+    padding-bottom: 0.7rem;
+}
+
+header img {
+    width: 10rem;
+}
+
+#microsoft-logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 6.5rem;
+    height: 1.4rem;
+}
+
+.arrow-icon {
+    width: 2px;
+    margin-left: 1em;
+    margin-bottom: 0.4rem;
+}
+
+.avatar-icon {
+    width: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.search-icon {
+    width: 1.1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+
+.products span {
+    position: relative;
+    bottom: 10px;
+}
+
+#sp1,
+#sp2 {
+    margin-left: 2rem;
+    margin-right: -0.6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+nav a {
+    margin-top: 1.4rem;
+}
+
+main {
+    display: flex;
+    background-image: url(content/bg-img.avif);
+    padding-top: 110px;
+    padding-bottom: 170px;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main-offer {
+    display: block;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 45rem;
+}
+
+.main-offer p {
+    padding-right: 0.5rem;
+}
+
+
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-right: 11.3rem;
+
+}
+
+.main-offer {
+    padding-top: 1rem;
+    padding-left: 5.5rem;
+}
+
+.main-offer img {
+    width: 0.5rem;
+}
+
+.invis-btn {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.blue-btn {
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+}
+
+.secwrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.7rem;
+    padding: 110px;
+}
+
+.secwrap p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.secwrap a {
+    color: #0067B8;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
