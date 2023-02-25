@@ -1,0 +1,46 @@
+<h2>Products</h2>
+
+<div>
+  <button *ngFor="let category of categories" (click)="setCategory(category)">
+    {{ category.name }}
+  </button>
+</div>
+
+<div *ngFor="let product of filteredProducts" id ="prdiv">
+  <div id ="prdiv-con">
+    <h3>
+      <img src="{{product.photo}}" alt="">
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+      >
+        {{ product.name }}
+      </a>
+    </h3>
+    <span>{{ product.price | currency: 'KZT' }}</span>
+
+
+    <p *ngIf="product.description">Description: {{ product.description }}  <br> <b>Rating: <span>{{product.rating}}</span> <br> <span>Likes: {{product.likes}}</span></b></p>
+
+    <button (click)="likeProduct(product)">Like</button>
+
+    <button type="button" (click)="share()" style="padding: 0">
+      <a
+        href="https://telegram.me/share/url?url={{ product.link }}"
+        target="_blank"
+        style="color:white;
+        padding: 8px 16px"
+      >Share
+      </a>
+    </button>
+
+    <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts>
+  </div>
+</div>
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
