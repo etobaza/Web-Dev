@@ -12,6 +12,7 @@ import {Category} from "../category";
 
 export class ProductListComponent {
   categories: Category[] = [
+    {name: 'Все'},
     {name: 'Смартфоны'},
     {name: 'Компьютеры и оргтехника'},
     {name: 'Аудио и видео'},
@@ -27,6 +28,10 @@ export class ProductListComponent {
 
 
   setCategory(category: Category) {
+    if(category.name == 'Все'){
+      this.selectedCategory = undefined;
+      return;
+    }
     this.selectedCategory = category;
   }
   deleteProduct(product: Product) {
