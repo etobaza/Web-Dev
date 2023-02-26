@@ -29,6 +29,9 @@ export class ProductListComponent {
   setCategory(category: Category) {
     this.selectedCategory = category;
   }
+  deleteProduct(product: Product) {
+    this.products = this.products.filter(p => p !== product);
+  }
 
   get filteredProducts(): Product[] {
     return this.selectedCategory ? this.products.filter(product => product.category.name === this.selectedCategory?.name) : this.products;
