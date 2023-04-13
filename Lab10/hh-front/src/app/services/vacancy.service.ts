@@ -20,6 +20,6 @@ export class VacancyService {
   }
 
   getVacanciesByCompany(companyId: number): Observable<Vacancy[]> {
-    return this.http.get<Vacancy[]>(`http://localhost:8000/api/companies/${companyId}/vacancies/`);
+    return this.http.get<Vacancy[]>(`http://127.0.0.1:8000/api/companies/${companyId}/vacancies/`);
   }
 }

@@ -28,3 +28,27 @@ class VacancyDetail(generics.RetrieveAPIView):
 class TopTenVacancies(generics.ListAPIView):
     queryset = Vacancy.objects.order_by('-salary')[:10]
     serializer_class = VacancySerializer
+
+class CompanyCreate(generics.CreateAPIView):
+    queryset = Company.objects.all()
+    serializer_class = CompanySerializer
+
+class VacancyCreate(generics.CreateAPIView):
+    queryset = Vacancy.objects.all()
+    serializer_class = VacancySerializer
+
+class CompanyUpdate(generics.UpdateAPIView):
+    queryset = Company.objects.all()
+    serializer_class = CompanySerializer
+
+class VacancyUpdate(generics.UpdateAPIView):
+    queryset = Vacancy.objects.all()
+    serializer_class = VacancySerializer
+
+class CompanyDelete(generics.DestroyAPIView):
+    queryset = Company.objects.all()
+    serializer_class = CompanySerializer
+
+class VacancyDelete(generics.DestroyAPIView):
+    queryset = Vacancy.objects.all()
+    serializer_class = VacancySerializer
